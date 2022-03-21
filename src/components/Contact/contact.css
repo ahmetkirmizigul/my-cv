@@ -1,0 +1,10 @@
+.icon_container {
+          display: flex;
+          gap: 100px;
+          align-items: center;
+          justify-content: center;
+
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.3); }

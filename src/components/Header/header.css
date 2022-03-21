@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+.header {
+
+          max-width: 1000px;
+          padding: 30px;
+          margin-left: 70px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+          background: transparent;
+          color: black;
+          font-family: 'Teko', sans-serif;
+          font-weight: 800;
+          font-size: 24px;
+          letter-spacing: 0.1rem;
+}
+
+.header img {
+          width: 80px;
+          height: 80px;
+          object-fit: contain;
+          margin-right: 40px;
+          cursor: pointer;
+          animation:img-rotate 10s linear infinite;
+         
+} 
+
+.link_container {
+          display: flex;
+          flex-direction: row;
+          gap: 50px;
+         
+          list-style: none;
+}
+
+.link_container li {
+          transition: ease-in-out 0.3s;
+          cursor: pointer;
+}
+
+.link_container li:hover {
+     opacity: 0.5;
+     color: white;
+    
+}
+
+@keyframes img-rotate {
+   from {
+             transform: rotate(0deg);
+   } 
+   to {
+          transform: rotate(360deg);
+   }
+}

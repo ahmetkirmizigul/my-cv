@@ -1,0 +1,29 @@
+.aboutme_container {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          
+          
+}
+p {
+          max-width: 600px;
+          min-width: 350px;
+          line-height: 1.6rem;
+          font-size: larger;
+          font-weight: 600;
+          font-family:monospace;
+}
+
+img {
+          width: 220px;
+          height: 220px;
+          object-fit: contain;
+          transition: all ease-in-out .5s;
+          transform: rotate(5deg);
+
+}
+img:hover {
+          transform: rotate(0deg);     
+}

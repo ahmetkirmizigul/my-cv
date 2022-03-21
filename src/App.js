@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./components/Header/Header";
+import "./App.css";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Experiences from "./components/Experiences/Experiences";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import Education from "./components/Education/Education";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fade>
+        <Header />
+      </Fade>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          paddingTop: 40,
+          paddingLeft: 70,
+          gap: 100,
+        }}
+      >
+        <Slide direction="left">
+          <AboutMe />
+        </Slide>
+        <Slide direction="right">
+          <Experiences />
+        </Slide>
+
+        <Education />
+
+        <Zoom>
+          <Contact />
+        </Zoom>
+      </div>
     </div>
   );
 }
